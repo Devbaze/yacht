@@ -1,0 +1,45 @@
+{
+  "name": "devbaze/yacht",
+  "description": "Library that integrates Traefik with Laravel",
+  "keywords": [
+    "laravel",
+    "sail",
+    "docker",
+    "traefik"
+  ],
+  "homepage": "https://github.com/devbaze/yacht",
+  "type": "library",
+  "license": "MIT",
+  "bin": "bin/yacht",
+  "authors": [
+    {
+      "name": "Bram Ceulemans",
+      "email": "bram@ceulemans.dev",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.0.2",
+    "carbon-cli/carbon-cli": "^1.2",
+    "illuminate/support": "^9.0",
+    "laravel/sail": "^1.13",
+    "symfony/yaml": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Devbaze\\Yacht\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Devbaze\\Yacht\\YachtServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
